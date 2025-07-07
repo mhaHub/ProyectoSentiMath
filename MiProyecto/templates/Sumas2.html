@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejercicios de Sumas</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #2196F3; /* Color azul */
+      color: white;
+      padding: 15px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .logo {
+      height: 50px;
+      margin-right: 10px;
+    }
+
+    .container {
+      background: white;
+      padding: 20px;
+      width: 80%;
+      max-width: 500px;
+      margin: 30px auto;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      color: #333;
+    }
+
+    input {
+      width: 80%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    button {
+      background-color: #2196F3;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin: 10px;
+    }
+
+    button:hover {
+      background-color: #1976D2;
+    }
+
+    .botones {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    #mensaje {
+      font-size: 18px;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="Imagenes/Imagen de WhatsApp 2025-07-02 a las 14.29.10_b3ae7ce8.jpg" alt="Logo de Sentimat" class="logo">
+    <h1>Sumas</h1>
+  </header>
+
+  <div class="container">
+    <h2>Resuelve el siguiente ejercicio:</h2>
+    <p id="pregunta"></p>
+    
+    <input type="number" id="respuesta" placeholder="Escribe tu respuesta">
+    <button onclick="verificarRespuesta()">Verificar</button>
+    
+    <p id="mensaje"></p>
+
+    <div class="botones">
+      <button id="btn-explicar" onclick="volverAExplicar()">Volver a Explicar</button>
+      <button id="btn-siguiente" onclick="siguienteEjercicio()" style="display: none;">Siguiente</button>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2025 Sentimat. Todos los derechos reservados.</p>
+  </footer>
+
+  <script>
+    const ejercicios = [
+      { pregunta: "9 + 5 =", respuesta: 14 },
+      { pregunta: "22 + 14 =", respuesta: 36 },
+      { pregunta: "29 + 26 =", respuesta: 55 },
+      { pregunta: "35 + 28 =", respuesta: 63 },
+      { pregunta: "42 + 35 =", respuesta: 77 },
+    ];
+
+    let indiceActual = 0;
+
+    function cargarEjercicio() {
+      document.getElementById("pregunta").textContent = ejercicios[indiceActual].pregunta;
+      document.getElementById("respuesta").value = "";
+      document.getElementById("mensaje").textContent = "";
+      document.getElementById("btn-siguiente").style.display = "none";
+    }
+
+    function verificarRespuesta() {
+      const respuestaUsuario = parseInt(document.getElementById("respuesta").value);
+      const respuestaCorrecta = ejercicios[indiceActual].respuesta;
+
+      if (respuestaUsuario === respuestaCorrecta) {
+        document.getElementById("mensaje").textContent = "✅ ¡Correcto!";
+        document.getElementById("btn-siguiente").style.display = "inline-block";
+      } else {
+        document.getElementById("mensaje").textContent = "❌ Inténtalo de nuevo.";
+      }
+    }
+
+    function siguienteEjercicio() {
+      if (indiceActual < ejercicios.length - 1) {
+        indiceActual++;
+        cargarEjercicio();
+      } else {
+        window.location.href = "seleccion.html"; // Redirige a la selección de temas
+      }
+    }
+
+    function volverAExplicar() {
+      window.location.href = "mete1.html";
+    }
+
+    cargarEjercicio(); // Cargar el primer ejercicio al iniciar
+  </script>
+</body>
+</html>

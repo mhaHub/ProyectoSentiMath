@@ -1,0 +1,109 @@
+/* Reseteo básico */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Header con fondo azul claro */
+.header {
+    background-color: #cde6f7;
+    width: 100%;
+    padding: 10px;
+}
+
+/* Logo en la esquina */
+.logo {
+    height: 50px;
+}
+
+/* Contenedor principal */
+.container {
+    width: 90%;
+    max-width: 800px;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Título colorido */
+.titulo-colorido {
+    font-size: 48px;
+    margin: 20px 0;
+    font-weight: bold;
+}
+
+/* Colores de cada letra de SENTIMAT */
+.titulo-colorido span.s { color: #fce388; }   /* Amarillo pastel */
+.titulo-colorido span.e { color: #f8b8b8; }   /* Rosa pastel */
+.titulo-colorido span.n { color: #f8b8b8; }
+.titulo-colorido span.t { color: #f8b8b8; }
+.titulo-colorido span.i { color: #a3c9f9; }   /* Azul pastel */
+.titulo-colorido span.m { color: #a3c9f9; }
+.titulo-colorido span.a { color: #b9e4c9; }   /* Verde pastel */
+.titulo-colorido span.t2 { color: #b9e4c9; }
+
+/* Subtítulo Bienvenido */
+.bienvenido {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Contenido con imagen y botones */
+.contenido {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+/* Imagen del niño */
+.imagen-nino {
+    width: 250px;
+}
+
+/* Contenedor de botones y texto */
+.acciones {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Botones grandes y redondeados */
+.acciones button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 20px;
+    background-color: #dddddd;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.acciones button:hover {
+    background-color: #cccccc;
+}
+
+/* Enlace eliminar mi cuenta */
+.eliminar-cuenta {
+    font-size: 14px;
+    color: #555555;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.eliminar-cuenta:hover {
+    text-decoration: underline;
+}
+
+/* Footer con fondo azul claro */
+footer {
+    background-color: #cde6f7;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+}

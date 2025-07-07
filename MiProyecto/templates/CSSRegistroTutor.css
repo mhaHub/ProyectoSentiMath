@@ -1,0 +1,104 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif; /* Fuente del texto */
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Color de fondo */
+}
+
+/* Encabezado */
+header {
+    background-color: #A1CEF4; /* Color de fondo del encabezado */
+    padding: 10px 20px; /* Espaciado interno */
+    display: flex; /* Alineación flexible */
+    align-items: center; /* Centra verticalmente */
+}
+
+/* Estilo del logo */
+.logo {
+    width: 80px; /* Tamaño del logo */
+    height: auto; /* Mantiene la proporción del logo */
+    margin-right: 10px; /* Espacio a la derecha del logo */
+}
+
+/* Título del encabezado */
+header h1 {
+    margin: 0; /* Sin margen */
+    color: white; /* Color del texto */
+}
+
+/* Contenedor principal */
+.container {
+    width: 90%;
+    max-width: 800px; /* Ancho máximo del contenedor */
+    margin: auto; /* Centra el contenedor */
+    padding: 20px; /* Espaciado interno */
+    background-color: white; /* Color de fondo blanco */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+/* Títulos */
+h1 {
+    font-size: 2.5em; /* Tamaño del título */
+    color: #333; /* Color del texto */
+    text-align: center; /* Centra el texto */
+    margin-bottom: 20px; /* Margen inferior */
+}
+
+/* Estilos del formulario */
+form {
+    display: flex; /* Usar flexbox para una disposición más sencilla */
+    flex-direction: column; /* Colocar los elementos en columna */
+    gap: 15px; /* Espacio entre los elementos del formulario */
+}
+
+/* Estilo para las etiquetas */
+label {
+    font-weight: bold; /* Texto en negrita */
+}
+
+/* Estilo para los campos del formulario */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"],
+input[type="number"] {
+    padding: 10px; /* Espaciado interno */
+    border: 1px solid #ccc; /* Borde gris claro */
+    border-radius: 5px; /* Bordes redondeados */
+    font-size: 1em; /* Tamaño de la fuente */
+}
+
+/* Estilo para el botón de envío */
+button {
+    padding: 10px 20px; /* Espaciado en el botón */
+    background-color: #007BFF; /* Color de fondo del botón */
+    color: white; /* Color del texto del botón */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    font-size: 1em; /* Tamaño de la fuente del botón */
+    margin-top: 10px; /* Margen superior para separar de los textos */
+}
+
+button:hover {
+    background-color: #0056b3; /* Color del botón al pasar el mouse */
+}
+
+/* Estilo para el mensaje de registro */
+#mensaje-registro {
+    text-align: center; /* Centra el mensaje */
+    margin-top: 20px; /* Margen superior */
+}
+
+/* Pie de página */
+footer {
+    margin-top: 20px; /* Margen superior */
+    padding: 15px; /* Espaciado interno */
+    background-color: #A1CEF4; /* Color de fondo azul */
+    color: white; /* Color del texto */
+    text-align: center; /* Centra el texto */
+    font-size: 0.8em; /* Tamaño de la fuente */
+    border-radius: 0 0 10px 10px; /* Bordes redondeados */
+}

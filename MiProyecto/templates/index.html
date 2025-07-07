@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Sentimat - Bienvenido</title>
+    <link rel="stylesheet" href="CSSindex.css">
+</head>
+<body>
+    <header class="header">
+        <img src="Imagenes/Imagen de WhatsApp 2025-07-02 a las 14.29.10_b3ae7ce8.jpg" alt="Logo de Sentimat" class="logo" />
+    </header>
+
+    <main class="container">
+        <h1 class="titulo-colorido">
+            <span class="s">S</span><span class="e">E</span><span class="n">N</span><span class="t">T</span>
+            <span class="i">I</span><span class="m">M</span><span class="a">A</span><span class="t2">T</span>
+        </h1>
+        <h2 class="bienvenido">Bienvenido</h2>
+
+        <div class="contenido">
+            <img src="{{ url_for('static', filename='imagen/nino.png') }}" alt="Niño escribiendo" class="imagen-nino" />
+            <div class="acciones">
+                <p>¿Eres nuevo?</p>
+
+                <a href="RegistroTutor.html">
+                    <button>Registrarte</button>
+                </a>
+
+                <p>¿Ya tienes una cuenta?</p>
+                <a href="{{ url_for('login') }}">
+                    <button>Iniciar sesión</button>
+                </a>
+            
+            
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2025 Sentimat. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

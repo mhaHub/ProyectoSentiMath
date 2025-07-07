@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matemáticas</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #e6f0fa;
+        }
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #e6f0fa;
+            padding: 10px 20px;
+            position: relative;
+        }
+        header .logo_m {
+            width: 50px;
+            margin-right: 15px;
+        }
+        header h1 {
+            background-color: #99ccff;
+            padding: 10px 30px;
+            border-radius: 20px;
+            font-size: 24px;
+            font-weight: normal;
+        }
+        .container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            padding: 20px;
+            background-color: white;
+        }
+        .column {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 10px;
+        }
+        .column h2 {
+            font-size: 18px;
+            margin-bottom: 20px;
+            color: #555;
+        }
+        .buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        .buttons button {
+            border: none;
+            border-radius: 20px;
+            padding: 10px 20px;
+            font-weight: bold;
+            font-size: 14px;
+            cursor: pointer;
+            width: 200px;
+            color: white;
+        }
+        .sumas {
+            background-color: #006699;
+        }
+        .restas {
+            background-color: #004d99;
+        }
+        .multiplicaciones {
+            background-color: #003366;
+        }
+        .divisiones {
+            background-color: #6699ff;
+            color: black;
+        }
+        .fracciones-basico {
+            background-color: #99ccff;
+            color: black;
+        }
+        .fracciones-diferente {
+            background-color: #cc9966;
+            color: black;
+        }
+        .decimales {
+            background-color: #ffcc66;
+            color: black;
+        }
+        .mcm {
+            background-color: #ffdb4d;
+            color: black;
+        }
+        .mcd {
+            background-color: #ffff99;
+            color: black;
+        }
+        .multiplicaciones-decimales {
+            background-color: #f0e68c;
+            color: black;
+        }
+        .ecuaciones {
+            background-color: #800080;
+        }
+        .raiz-cuadrada {
+            background-color: #993366;
+        }
+        .teorema-pitagoras {
+            background-color: #9933cc;
+        }
+        .trigonometria {
+            background-color: #cc66ff;
+        }
+        .exponenciales {
+            background-color: #d9b3ff;
+            color: black;
+        }
+        .regresar {
+            margin: 20px auto;
+            display: block;
+            background-color: #ccc;
+            color: black;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 20px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="Imagenes/Imagen de WhatsApp 2025-07-02 a las 14.29.10_b3ae7ce8.jpg" alt="logo en miniatura" class="logo_m">
+        <h1>Matemáticas :)</h1>
+    </header>
+    <div class="container">
+        <!-- Nivel Básico -->
+        <div class="column">
+            <h2>Básico</h2>
+            <div class="buttons">
+                <button class="sumas">Sumas</button>
+                <button class="restas">Restas</button>
+                <button class="multiplicaciones">Multiplicaciones</button>
+                <button class="divisiones">Divisiones</button>
+                <button class="fracciones-basico">Fracciones (Mismo Numerador)</button>
+            </div>
+        </div>
+        <!-- Nivel Intermedio -->
+        <div class="column">
+            <h2>Intermedio</h2>
+            <div class="buttons">
+                <button class="fracciones-diferente">Fracciones (Diferente Numerador)</button>
+                <button class="decimales">Decimales</button>
+                <button class="mcm">Mínimo Común Múltiplo</button>
+                <button class="mcd">Máximo Común Divisor</button>
+                <button class="multiplicaciones-decimales">Multiplicaciones con Decimales</button>
+            </div>
+        </div>
+        <!-- Nivel Avanzado -->
+        <div class="column">
+            <h2>Avanzado</h2>
+            <div class="buttons">
+                <button class="ecuaciones">Ecuaciones Básicas</button>
+                <button class="raiz-cuadrada">Raíz Cuadrada</button>
+                <button class="teorema-pitagoras">Teorema de Pitágoras</button>
+                <button class="trigonometria">Trigonometría</button>
+                <button class="exponenciales">Exponenciales</button>
+            </div>
+        </div>
+    </div>
+    <button class="regresar">Regresar</button>
+</body>
+</html>

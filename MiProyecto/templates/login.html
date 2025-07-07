@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sentimat - Iniciar sesión</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #e6f0fa;
+    }
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #e6f0fa;
+    }
+    .login-box {
+      display: flex;
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+      overflow: hidden;
+      width: 800px;
+      max-width: 90%;
+    }
+    .left {
+      background-color: #e6f0fa;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+    .left img {
+      width: 200px;
+      margin-bottom: 20px;
+    }
+    .speech-bubble {
+      position: relative;
+      background: white;
+      border: 2px solid black;
+      border-radius: .4em;
+      padding: 10px;
+      font-weight: bold;
+    }
+    .speech-bubble:after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 100%;
+      width: 0;
+      height: 0;
+      border: 10px solid transparent;
+      border-left-color: black;
+      margin-top: -10px;
+    }
+    .right {
+      flex: 1;
+      padding: 40px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+    .logo img {
+      width: 50px;
+      margin-right: 10px;
+    }
+    .logo span {
+      font-size: 32px;
+      font-weight: bold;
+      font-family: Arial, sans-serif;
+    }
+    .logo .sent {
+      color: #ffcc66;
+    }
+    .logo .i {
+      color: #66ccff;
+    }
+    .logo .mat {
+      color: #99ccff;
+    }
+    h2 {
+      font-style: italic;
+      margin: 0 0 20px 0;
+    }
+    label {
+      font-size: 14px;
+      margin-bottom: 5px;
+      display: block;
+    }
+    input[type="email"],
+    input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: none;
+      border-radius: 20px;
+      background-color: #f2f2f2;
+      font-size: 14px;
+    }
+    input[type="password"] {
+      background-color: #f8d6d9;
+    }
+    .forgot {
+      font-size: 12px;
+      margin-bottom: 20px;
+      text-align: right;
+    }
+    button {
+      padding: 10px;
+      width: 100%;
+      border: none;
+      border-radius: 20px;
+      background-color: black;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="login-box">
+      <div class="left">
+        <img src="Imagenes/Imagen de WhatsApp 2025-07-03 a las 16.33.30_82f5fb0f.jpg" alt="Monstruo">
+        <div class="speech-bubble">¡¡Aprende conmigo!!</div>
+      </div>
+      <div class="right">
+        <div class="logo">
+          <img src="Imagenes/Imagen de WhatsApp 2025-07-02 a las 14.29.10_b3ae7ce8.jpg" alt="Logo">
+          <span><span class="sent">Senti</span><span class="i">M</span><span class="mat">at</span></span>
+        </div>
+        <h2>Iniciar sesion</h2>
+        <form>
+          <label for="email">Correo electrónico:</label>
+          <input type="email" id="email" name="email" required>
+
+          <label for="password">Contraseña:</label>
+          <input type="password" id="password" name="password" required>
+
+          <div class="forgot">¿Olvidaste la contraseña?</div>
+
+          <button type="submit">Entrar</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Registro Niño - Sentimat</title>
+    <link rel="stylesheet" href="CSSNiño.css" />
+</head>
+<body>
+    <header>
+        <img src="Imagenes/Imagen de WhatsApp 2025-07-02 a las 14.29.10_b3ae7ce8.jpg" alt="Logo de Sentimat" class="logo" />
+        <h1>Sentimat</h1>
+    </header>
+
+    <div class="container">
+        <h1>Registro de Niño</h1>
+
+        {% with mensajes = get_flashed_messages() %}
+            {% if mensajes %}
+                {% for msj in mensajes %}
+                    <p style="color:green">{{ msj }}</p>
+                {% endfor %}
+            {% endif %}
+        {% endwith %}
+
+        <form method="POST">
+            <label for="nombre_nino">Nombre del Niño:</label>
+            <input type="text" id="nombre_nino" name="nombre_nino" maxlength="30" pattern="[^0-9]*" title="No se permiten números" required />
+            {% if errores.nombre_nino %}<p style="color:red">{{ errores.nombre_nino }}</p>{% endif %}
+
+            <label for="apellido_nino">Apellido del Niño:</label>
+            <input type="text" id="apellido_nino" name="apellido_nino" maxlength="30" pattern="[^0-9]*" title="No se permiten números" required />
+            {% if errores.apellido_nino %}<p style="color:red">{{ errores.apellido_nino }}</p>{% endif %}
+
+            <label for="fecha_nacimiento">Fecha de Nacimiento:</label>
+            <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" min="2015-01-01" max="2025-12-31" required />
+            {% if errores.fecha_nacimiento %}<p style="color:red">{{ errores.fecha_nacimiento }}</p>{% endif %}
+
+            <button type="submit">Registrar Niño</button>
+        </form>
+    </div>
+
+    <footer>
+        <p>© 2025 Sentimat. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
